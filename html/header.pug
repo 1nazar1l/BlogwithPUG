@@ -1,0 +1,32 @@
+mixin select-item(item)
+  .header_select-item
+    span.header_select-item-text= item
+
+mixin custom-select(name)
+  .header_select
+    .header_select-header
+      span.header_select-current= name 
+      .header_select-icon
+        img.header_select-icon-img(src="../media/svg/Select-icon.svg", alt="")
+    .header_select-body
+      +select-item("Post Header")
+      +select-item("Post Layout")
+      +select-item("Share Buttons")
+      +select-item("Gallery Post")
+      +select-item("Video Post")
+
+header.header 
+  .header_top
+    .header_burger
+      span.header_burger-menu
+    img.header_logo(src="../media/svg/Logotype.svg", alt="") 
+    .header_top_right
+      input.header_text-field(type="text" placeholder="Поиск")
+      button.header_search
+  .header_bottom
+    +custom-select("Demos")
+    +custom-select("Post")
+    +custom-select("Features")
+    +custom-select("Categories")
+    +custom-select("Shop")
+    a.header_link(href="") Buy Now 

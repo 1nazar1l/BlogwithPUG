@@ -1,0 +1,23 @@
+mixin topic-card(type, topic, image)
+  div.main_card 
+    .main_card-img 
+      img.main_card-picture(src= image, alt="")
+    .main_card-type= type 
+    .main_card-topic= topic 
+    .main_card-user
+      span.main_card-author Krutoy Redactor
+      span.main_card-date 30 February
+      span.main_card-views 542k
+    .main_card-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aspernatur sunt!
+
+main
+  div.main
+    +topic-card("style", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam.", "../media/png/1.png")
+    +topic-card("style", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam.", "../media/png/2.png")
+    +topic-card("style", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam.", "../media/png/3.png")
+    +topic-card("style", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam.", "../media/png/4.png")
+    +topic-card("style", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam.", "../media/png/5.png")
+    +topic-card("style", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam.", "../media/png/6.png")
+    +topic-card("style", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam.", "../media/png/7.png")
+    +topic-card("style", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam.", "../media/png/8.png")
+    +topic-card("style", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam.", "../media/png/9.png")
