@@ -1,7 +1,7 @@
 mixin topic-card(type, topic, image)
   div.main_card 
     .main_card-img 
-      img.main_card-picture(src= image, alt="")
+      img.main_card-picture(src= require(image), alt="")
     .main_card-type= type 
     .main_card-topic= topic 
     .main_card-user

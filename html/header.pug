@@ -7,7 +7,7 @@ mixin custom-select(name)
     .header_select-header
       span.header_select-current= name 
       .header_select-icon
-        img.header_select-icon-img(src="../media/svg/Select-icon.svg", alt="")
+        img.header_select-icon-img(src=require("../media/svg/Select-icon.svg"), alt="")
     .header_select-body
       +select-item("Post Header")
       +select-item("Post Layout")
@@ -18,7 +18,7 @@ mixin custom-select(name)
 header.header 
   .header_mobile
     .header_mobile-top
-      img.header_logo(src="../media/svg/Logotype.svg", alt="") 
+      img.header_logo(src=require("../media/svg/Logotype.svg"), alt="")
       .header_close-btn
         span.header_mobile-cross
     .header_bottom-mobile
@@ -27,11 +27,11 @@ header.header
       +custom-select("Features")
       +custom-select("Categories")
       +custom-select("Shop")
-      a.header_link(href="") Buy Now 
+      a.header_link(href=require("")) Buy Now 
   .header_top
     .header_burger
       span.header_burger-menu
-    img.header_logo(src="../media/svg/Logotype.svg", alt="") 
+    img.header_logo(src=require("../media/svg/Logotype.svg"), alt="")
     .header_top_right
       input.header_text-field(type="text" placeholder="Поиск")
       button.header_search
@@ -41,4 +41,4 @@ header.header
     +custom-select("Features")
     +custom-select("Categories")
     +custom-select("Shop")
-    a.header_link(href="") Buy Now 
+    a.header_link(href=require("")) Buy Now 
