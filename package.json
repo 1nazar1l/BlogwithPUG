@@ -1,0 +1,33 @@
+{
+  "name": "blogwithpug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "dev": "webpack",
+    "build": "webpack --node-env=production",
+    "clear": "rd /s /q dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1nazar1l/BlogwithPUG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1nazar1l/BlogwithPUG/issues"
+  },
+  "homepage": "https://github.com/1nazar1l/BlogwithPUG#readme",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "pug-plugin": "^6.0.0",
+    "sass": "^1.86.3",
+    "sass-loader": "^16.0.5",
+    "webpack": "^5.99.5",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}

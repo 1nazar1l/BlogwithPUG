@@ -389,14 +389,14 @@
 
         &_card {
             width: 25%;
+        }
 
-            &:nth-child(2n) {
-                margin-right: 5%;
-            }
+        &_card:nth-child(2n) {
+            margin-right: 5%;
+        }
 
-            &:nth-child(2n) {
-                margin-right: 0;
-            }
+        &_card:nth-child(3n) {
+            margin-right: 0;
         }
     }
 }
