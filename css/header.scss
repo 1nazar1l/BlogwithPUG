@@ -86,6 +86,28 @@
         &-icon-img {
             transform: translate(0, -25%);
         }
+
+        &:hover &-body {
+            opacity: 1;
+            visibility: visible;
+            height: max-content;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: #e9e9e9;
+            margin-bottom: 0.44rem;
+            padding-bottom: 0.44rem;
+            font-size: 0.72rem;
+            line-height: 0.72rem;
+            font-weight: 400;
+
+            &-text {
+                transition: ease-in-out .5s;
+            }
+        }
     }
 
     &_link {
