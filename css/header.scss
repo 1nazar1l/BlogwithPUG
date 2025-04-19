@@ -49,6 +49,11 @@
         visibility: hidden;
         outline-offset: 0;
         transition: all .3s ease-in-out;
+
+        &.active {
+            width: 85%;
+            visibility: visible;
+        }
     }
 
     &_bottom {

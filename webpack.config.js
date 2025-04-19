@@ -45,12 +45,15 @@ module.exports = {
                 test: /\.(png|jpg|jpeg|ico)/,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'media/[name].[hash][ext]'
+                    filename: 'media/png/[name].[hash][ext]'
                 }
             },
             {
                 test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-                type: 'asset/inline',
+                type: 'asset/resource',
+                generator: {
+                    filename: 'media/svg/[name].[hash][ext]'
+                }
             }
         ],
     },
