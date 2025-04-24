@@ -1,3 +1,7 @@
+body.active {
+    overflow-y: hidden;
+}
+
 .header {
     font-family: "Roboto", serif;
     font-weight: 500;
@@ -7,6 +11,10 @@
     &_logo {
         width: 10rem;
         transition: opacity .8s ease-in-out;
+
+        &.active {
+            opacity: 0;
+        }
     }
 
     &_top {
@@ -279,6 +287,10 @@
             background-color: white;
             left: -17.8rem;
 
+            &.active {
+                left: 0;
+            }
+
             &-top {
                 display: flex;
                 justify-content: space-between;
@@ -299,6 +311,7 @@
                 border-radius: 0.17rem;
                 position: absolute;
                 content: "";
+                cursor: pointer;
             }
         
             &-cross::before {

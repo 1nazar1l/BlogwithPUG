@@ -23,4 +23,31 @@ document.addEventListener("DOMContentLoaded", function(){
             top = window.pageYOffset
         })
     }
+
+    burger = document.querySelector(".header_burger")
+    logo = document.querySelector(".header_top .header_logo")
+    headerMobile = document.querySelector(".header_mobile")
+    cross = document.querySelector(".header_mobile-cross")
+
+
+    burger.addEventListener("click", () => {
+        document.body.classList.add("active")
+        logo.classList.add("active")
+        headerMobile.classList.add("active")
+    })
+    document.addEventListener("click", (e) => {
+        const withinHeaderMobile = e.composedPath().includes(headerMobile);
+        const withinBurger = e.composedPath().includes(burger);
+        if (!withinHeaderMobile && !withinBurger) {
+            document.body.classList.remove("active")
+            logo.classList.remove("active")
+            headerMobile.classList.remove("active")
+        }
+    })
+
+    cross.addEventListener("click", () => {
+        document.body.classList.toggle("active")
+        logo.classList.toggle("active")
+        headerMobile.classList.toggle("active")
+    })
 })
